@@ -2,13 +2,6 @@
 
 import { Link } from 'react-scroll';
 
-interface NavProps {
-  containerStyle?: string;
-  listStyle?: string;
-  linkStyle?: string;
-  spy?: boolean;
-}
-
 const links = [
   { name: 'home' },
   { name: 'about' },
@@ -16,6 +9,13 @@ const links = [
   { name: 'work' },
   { name: 'contact' },
 ];
+
+interface NavProps {
+  containerStyle?: string;
+  listStyle?: string;
+  linkStyle?: string;
+  spy?: boolean;
+}
 
 const Nav = ({ containerStyle, listStyle, linkStyle, spy }: NavProps) => {
   return (
