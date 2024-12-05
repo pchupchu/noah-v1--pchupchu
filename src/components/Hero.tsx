@@ -37,20 +37,22 @@ const Hero = () => {
           <div>stats</div>
         </div>
         <div className='bg-accent absolute right-0 top-0 hidden min-h-[800px] min-w-[55vw] xl:flex'>
-          <div className='absolute bottom-0 left-[6.5vw] z-20'>
-            <Image
-              className='object-contain'
-              src='/hero/dev.png'
-              height={642}
-              width={558}
-              alt='Noah'
-              quality='100'
-              priority
-            />
-          </div>
-          <div className='absolute left-[4vw] top-48 hidden xl:flex'>
-            <Image src='hero/arrow.svg' alt='arrow' width={160} height={160} />
-          </div>
+          <Image
+            className='absolute bottom-0 left-[6.5vw] z-20 object-contain'
+            src='/hero/dev.png'
+            height={642}
+            width={558}
+            alt='Noah'
+            quality='100'
+            priority
+          />
+          <Image
+            className='absolute left-[4vw] top-48 hidden xl:flex'
+            src='hero/arrow.svg'
+            alt='arrow'
+            width={160}
+            height={160}
+          />
           <div className='absolute left-[3vw] top-[600px]'>
             <RotatingShape
               content={
