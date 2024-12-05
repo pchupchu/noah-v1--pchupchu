@@ -5,14 +5,13 @@ import Image from 'next/image';
 import { Link } from 'react-scroll';
 import { TypeAnimation } from 'react-type-animation';
 
+import Header from './Header';
 import RotatingShape from './RotatingShape';
-
-// import { Link as ScrollLink } from "react-scroll";
 
 const Hero = () => {
   return (
     <section className='bg-accent/10 relative h-[800px] xl:bg-white'>
-      <div>header</div>
+      <Header />
       <div className='container h-full'>
         <div className='relative z-20 flex h-full w-full flex-col items-center justify-center pt-10 text-center xl:max-w-3xl xl:items-start xl:text-left'>
           <h1 className='h1 mb-2 max-w-80 capitalize xl:max-w-none'>
