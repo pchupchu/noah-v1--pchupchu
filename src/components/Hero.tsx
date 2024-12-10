@@ -7,6 +7,7 @@ import { TypeAnimation } from 'react-type-animation';
 
 import Header from './Header';
 import RotatingShape from './RotatingShape';
+import Stats from './Stats';
 
 const Hero = () => {
   return (
@@ -33,7 +34,7 @@ const Hero = () => {
           <Link to='contact' smooth>
             <button className='btn btn-accent mb-8'>Contact me</button>
           </Link>
-          <div>stats</div>
+          <Stats />
         </div>
         <div className='bg-accent absolute right-0 top-0 hidden min-h-[800px] min-w-[55vw] xl:flex'>
           <Image
