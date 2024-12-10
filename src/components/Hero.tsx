@@ -10,7 +10,7 @@ import RotatingShape from './RotatingShape';
 
 const Hero = () => {
   return (
-    <section className='bg-accent/10 relative h-[800px] xl:bg-white'>
+    <section className='bg-accent/10 relative h-[800px] xl:bg-white' id='home'>
       <Header />
       <div className='container h-full'>
         <div className='relative z-20 flex h-full w-full flex-col items-center justify-center pt-10 text-center xl:max-w-3xl xl:items-start xl:text-left'>
