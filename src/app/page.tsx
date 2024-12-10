@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 
 import About from '@/components/About';
 import Contact from '@/components/Contact';
+import FixedMenu from '@/components/FixedMenu';
 import Hero from '@/components/Hero';
 import Journey from '@/components/Journey';
 import Services from '@/components/Services';
@@ -22,6 +23,7 @@ export default function Home() {
   return (
     <main>
       <Hero />
+      <FixedMenu />
       <Services />
       <About />
       <Journey />
