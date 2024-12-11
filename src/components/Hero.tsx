@@ -52,6 +52,8 @@ const Hero = () => {
             alt='arrow'
             width={160}
             height={160}
+            data-scroll
+            data-scroll-speed='0.05'
           />
           <div className='absolute left-[3vw] top-[600px]'>
             <RotatingShape
