@@ -63,6 +63,8 @@ const Hero = () => {
                   alt='shape'
                   width={38}
                   height={38}
+                  data-scroll
+                  data-scroll-speed='0.2'
                 />
               }
               direction='left'
@@ -77,6 +79,8 @@ const Hero = () => {
                   alt='shape'
                   width={34}
                   height={34}
+                  data-scroll
+                  data-scroll-speed='0.1'
                 />
               }
               direction='right'
@@ -91,6 +95,8 @@ const Hero = () => {
                   alt='shape'
                   width={36}
                   height={36}
+                  data-scroll
+                  data-scroll-speed='0.08'
                 />
               }
               direction='left'
