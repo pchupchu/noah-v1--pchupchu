@@ -20,18 +20,17 @@ const statsData = [
 
 const Stats = () => {
   return (
-    <section className='mx-auto flex justify-center gap-4 xl:mx-0 xl:w-[380px] xl:justify-normal xl:gap-0'>
+    <div className='mx-auto flex justify-center gap-4 xl:mx-0 xl:justify-normal'>
       {statsData.map((stat, index) => (
         <div key={index}>
           <StatsItem
-            key={index}
             endCountNum={stat.endCountNum}
             endCountText={stat.endCountText}
             text={stat.text}
           />
         </div>
       ))}
-    </section>
+    </div>
   );
 };
 
