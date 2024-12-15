@@ -8,6 +8,7 @@ import FixedMenu from '@/components/FixedMenu';
 import Hero from '@/components/Hero';
 import Journey from '@/components/Journey';
 import Services from '@/components/Services';
+import Testimonial from '@/components/Testimonial';
 import Work from '@/components/Work';
 
 export default function Home() {
@@ -28,6 +29,7 @@ export default function Home() {
       <About />
       <Journey />
       <Work />
+      <Testimonial />
       <Contact />
     </main>
   );
