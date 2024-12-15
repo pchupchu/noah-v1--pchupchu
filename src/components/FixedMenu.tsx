@@ -51,8 +51,13 @@ const FixedMenu = () => {
     <div className='pointer-events-none fixed z-50 flex h-[400px] w-full justify-center bg-transparent'>
       <AnimatePresence>
         {showMenu && showMenuBtn && (
-          <motion.div className='pointer-events-auto relative bottom-[28rem] min-h-[400px] w-full max-w-md px-4 md:max-w-none xl:bottom-[21.2rem]'>
-            <div className='shadow-custom mx-auto flex h-full w-full max-w-[1170px] items-center gap-12 rounded-lg bg-white px-12 py-12 xl:px-32'>
+          <motion.div
+            className='pointer-events-auto relative bottom-[28rem] min-h-[400px] w-full max-w-md px-4 md:max-w-none xl:bottom-[21.2rem]'
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 20 }}
+            transition={{ duration: 0.2 }}>
+            <div className='mx-auto flex h-full w-full max-w-[1170px] items-center gap-12 rounded-lg bg-white px-12 py-12 shadow-custom xl:px-32'>
               <Nav
                 containerStyle='md:border-r border-secondary/20 md:pr-12 w-full md:w-auto text-center md:text-left'
                 listStyle='flex flex-col justify-center gap-4'
@@ -62,20 +67,20 @@ const FixedMenu = () => {
               <div className='mx-auto hidden md:block'>
                 <div className='mb-12 flex gap-12'>
                   <div className='flex flex-col'>
-                    <FiMapPin className='text-accent mb-2 text-[28px]' />
-                    <p className='text-primary text-lg font-semibold'>
+                    <FiMapPin className='mb-2 text-[28px] text-accent' />
+                    <p className='text-lg font-semibold text-primary'>
                       Location
                     </p>
                     <p>New York, USA</p>
                   </div>
                   <div className='flex flex-col'>
-                    <FiPhoneCall className='text-accent mb-2 text-[28px]' />
-                    <p className='text-primary text-lg font-semibold'>Phone</p>
+                    <FiPhoneCall className='mb-2 text-[28px] text-accent' />
+                    <p className='text-lg font-semibold text-primary'>Phone</p>
                     <p>+123 456 789</p>
                   </div>
                   <div className='flex flex-col'>
-                    <FiMail className='text-accent mb-2 text-[28px]' />
-                    <p className='text-primary text-lg font-semibold'>Email</p>
+                    <FiMail className='mb-2 text-[28px] text-accent' />
+                    <p className='text-lg font-semibold text-primary'>Email</p>
                     <p>youremail@example.com</p>
                   </div>
                 </div>
